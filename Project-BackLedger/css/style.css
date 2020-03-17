@@ -15,9 +15,9 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin: 0.75rem 0;
-}
+  p {
+    margin: 0.75rem 0;
+  }
 
 /* Utlity classes */
 .container {

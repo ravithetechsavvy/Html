@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+:root {
+  --max-container-width: 1100px;
+  --primary-color: #f76a8c;
+  --primary-dark-color: #fe346e;
+  --secondary-color: #7f78d2;
+  --dark-color: #333;
+  --light-color: #f4f4f4;
+  --defualt-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+#main-header {
+  display: flex;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/* Utitility Classs */
+.container {
+  width: var(--max-container-width);
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: var(--defualt-color);
+}
+
+.text-default {
+  color: var(--defualt-color);
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0 0.75rem;
+  line-height: 1.1;
+}
+
+.lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.py-4 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+.p-4 {
+  padding: 4rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0.5rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px dotted var(--light-color);
+}
+
+.list li a:hover {
+  background: var(--primary-dark-color);
+  color: var(--defualt-color);
+  border-radius: 5px;
+}
+/* Navbar */
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background: var(--primary-color);
+  color: var(--defualt-color);
+  padding: 1rem;
+  z-index: 1;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: var(--defualt-color);
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: var(--primary-dark-color);
+  color: var(--light-color);
+  border-radius: 5px;
+}
